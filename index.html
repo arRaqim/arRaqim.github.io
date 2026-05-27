@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=arRaqim.png">
-    <title>الرَّقيم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرَّقيم</title>
+    <style>
+        /* Remove default browser spacing */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Prevents scrollbars */
+            background-color: #000; /* Optional: Black background while loading */
+        }
+
+        /* Make the image cover the whole screen */
+        .fullscreen-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps aspect ratio while covering the screen */
+            object-position: center; /* Centers the image */
+        }
+    </style>
 </head>
 
 <body>
-    <script>
-        window.location.replace("arRaqim.png");
-    </script>
+
+    <img src="arRaqim.png" alt="الرقيم" class="fullscreen-bg">
+
 </body>
 
 </html>
